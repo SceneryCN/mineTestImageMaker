@@ -1,0 +1,51 @@
+export const zh = {
+	app: {
+		title: "JLImage",
+		subtitle: "对话即生图 · 智能识别 · 实时修正",
+	},
+	chat: {
+		placeholder: "输入消息，或拖拽图片到此处…",
+		emptyTitle: "JLImage 已就绪",
+		emptyDescription:
+			"聊天、生图、改图，一个入口搞定。说「帮我画一只猫」自动生图，悬浮图片可继续编辑。",
+		thinking: "思考中…",
+		streaming: "正在输出…",
+		generatingImage: "好的，正在为你生成图片…",
+		error: "发送失败，请检查 API Key 或网络",
+		uploadImage: "上传图片",
+		removeImage: "移除图片",
+		dropHint: "松开以上传图片",
+		editImage: "编辑修正",
+		editPlaceholder: "描述你想如何修改这张图片…",
+		editSubmit: "开始修正",
+		editCancel: "取消",
+		imageGenerating: "生成中",
+		imageError: "生成失败",
+		tapToEdit: "点击编辑",
+		download: "下载图片",
+		downloadFailed: "下载失败，请稍后重试",
+	},
+	settings: {
+		title: "API 设置",
+		description: "你的 API Key 仅保存在浏览器本地，不会上传到任何服务器",
+		apiKey: "API Key",
+		apiKeyPlaceholder: "输入你的 Agnes AI API Key",
+		save: "保存",
+		cancel: "取消",
+		getKey: "获取 API Key",
+		notConfigured: "请先配置 API Key",
+		configured: "已配置",
+		openSettings: "设置",
+	},
+	common: {
+		send: "发送",
+		clear: "清空",
+		newSession: "新会话",
+		jumpToLatest: "回到最新",
+		close: "关闭",
+		imagePreview: "图片预览",
+		loading: "加载中…",
+	},
+} as const;
+
+export type I18nKey = typeof zh;
